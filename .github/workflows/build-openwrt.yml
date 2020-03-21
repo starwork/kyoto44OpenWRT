@@ -6,14 +6,14 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: Build OpenWrt based on 5.4 kernel for Youhua WR1200JS
 
 on:
   release:
     types: [published]
   push:
     branches:
-      - master
+      - ramips-5.4
     paths:
       - 'wr1200js.config'
 #  schedule:
