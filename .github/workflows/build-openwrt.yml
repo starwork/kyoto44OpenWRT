@@ -22,8 +22,8 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-18.06
+  REPO_URL: https://github.com/dengqf6/openwrt
+  REPO_BRANCH: ramips-5.4
   CONFIG_FILE: wr1200js.config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
@@ -119,5 +119,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_openwrt-18.06
+        name: OpenWrt_WR1200JS_linux5.4
         path: ${{ env.FIRMWARE }}
