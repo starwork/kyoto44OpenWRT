@@ -9,17 +9,9 @@
 name: Build OpenWrt based on 5.4 kernel for Youhua WR1200JS
 
 on:
-  release:
-    types: [published]
   push:
     branches:
-      - ramips-5.4
-    paths:
-      - 'wr1200js.config'
-#  schedule:
-#    - cron: 0 8 * * 5
-  watch:
-    types: [started]
+      - '*'
 
 env:
   REPO_URL: https://github.com/dengqf6/openwrt
